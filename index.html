@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>湖畔心靈港灣</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #e3f2fd;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: bold;
+    }
+
+    main {
+      background-image: url('images/lake.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .text-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+      background-color: #ffffff;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fafafa;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 10px 5px;
+    }
+
+    .card p {
+      margin: 0 10px 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card a {
+      margin: 10px;
+      color: #1976d2;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #e0e0e0;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .visit-counter {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>湖畔心靈港灣</h1>
+    <nav>
+      <a href="/about.html">關於我們</a>
+      <a href="/story.html">個案/文章分享</a>
+      <a href="/resource.html">相關資源</a>
+      <a href="/therapist.html">合作心理師</a>
+      <a href="/books.html">推薦書籍</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="text-box">
+      <h2>歡迎來到湖畔心靈港灣</h2>
+      <p>這是專為性成癮者設立的平台，無論你已經因為色情開始出現脫序行為，或是在腦海中浮現無數次想嘗試的念頭，只要你想改變，我們陪你一起重拾生活的平衡與希望。</p>
+    </div>
+  </main>
+
+  <section class="card-section">
+    <div class="card">
+      <img src="images/about us.jpg" alt="關於我們">
+      <h3>關於我們</h3>
+      <p>了解我們建立這個平台的初衷與願景。</p>
+      <a href="/about.html">了解更多</a>
+    </div>
+    <div class="card">
+      <img src="images/story.jpg" alt="個案分享">
+      <h3>個案/文章分享</h3>
+      <p>真實故事、心得分享，陪你不再孤單。</p>
+      <a href="/story.html">前往分享</a>
+    </div>
+    <div class="card">
+      <img src="images/resource.jpg" alt="相關資源">
+      <h3>相關資源</h3>
+      <p>提供實用資源與協助你成長的工具。</p>
+      <a href="/resource.html">查看資源</a>
+    </div>
+    <div class="card">
+      <img src="images/therapist.jpg" alt="合作心理師">
+      <h3>合作心理師</h3>
+      <p>我們合作的專業心理師團隊。</p>
+      <a href="/therapist.html">認識他們</a>
+    </div>
+    <div class="card">
+      <img src="images/books.jpg" alt="推薦書籍">
+      <h3>推薦書籍</h3>
+      <p>這些書曾幫助過許多人，也幫助了我，希望他們能幫助你。</p>
+      <a href="/books.html">瀏覽書單</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>聯絡信箱：<a href="mailto:relieveyou0417@gmail.com">relieveyou0417@gmail.com</a></p>
+      </div>
+  
+      <div class="footer-right">
+        <p> 我們有line的匿名支持社群，需要幫助者請透過信箱聯絡!
+        </p>
+      </div>
+    </div>
+  
+    <p class="footer-note">
+      本平台無任何商業用途，僅提供支持性資源與匿名分享。<br>
+      © 2025 湖畔心靈港灣｜我們相信溫柔的力量，也希望你尊重這份用心。如需引用或分享，請來信聯繫。
+    </p>
+
+     <!-- 浮動 Facebook 圖示 -->
+     <a href="https://www.facebook.com/profile.php?id=61575463082263" 
+     target="_blank" 
+     class="floating-fb-icon" 
+     aria-label="Facebook 粉專">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+         alt="Facebook" /> 
+    </a>
+    
+    <style>
+    
+    footer {
+    position: relative; /* 為 footer 設定相對定位 */
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.85em;
+      color: #888;
+      margin-top: 30px;
+    }
+        
+    /* 浮動 Facebook 圖示 */
+    .floating-fb-icon img {
+    position: absolute; /* 設定絕對定位，使圖示相對於 footer 定位 */
+    bottom: 20px; /* 讓它距離 footer 底部 20px */
+    left: 20px; /* 讓它距離左邊 20px */
+    z-index: 1000;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .floating-fb-icon img {
+    width: 32px;
+    height: 32px;
+    }
+    
+    .floating-fb-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    </style>
+
+  </footer>
+
+</body>
+</html>

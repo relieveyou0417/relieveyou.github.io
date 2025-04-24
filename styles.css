@@ -1,0 +1,179 @@
+/* ===== 基本樣式設定 ===== */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fa;
+  color: #333;
+}
+
+/* 將整個頁面結構清楚分層：header, main, footer */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+/* ===== 導覽列 header ===== */
+header {
+  background-color: #e3f2fd;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #004ba0;
+  text-decoration: underline;
+}
+
+/* ===== 中間文字區塊 ===== */
+.text-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== 卡片區塊樣式 ===== */
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+/* ===== 響應式調整：手機上卡片變成一列 ===== */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* ===== 頁尾樣式（橫向）===== */
+footer {
+  background-color: #e0e0e0;
+  padding: 30px 20px;
+  font-size: 0.95em;
+  color: #555;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 讓元素居中 */
+  gap: 20px; /* 增加間距，避免擁擠 */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-right {
+  width: 100%; /* 確保每個區塊佔滿整個行寬 */
+  text-align: center; /* 文字置中 */
+}
+
+/* 手機版樣式 */
+@media (max-width: 768px) {
+  .footer-container {
+    gap: 15px; /* 在小螢幕上減少間距 */
+  }
+}
+
+.footer-note {
+  text-align: center;
+  font-size: 0.85em;
+  color: #888;
+  margin-top: 30px;
+}
+
+.visit-counter {
+  text-align: center;
+  font-size: 0.85em;
+  color: #888;
+  margin-top: 15px;
+}
+
+.floating-fb-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-fb-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.floating-fb-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}

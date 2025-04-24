@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>推薦書籍｜湖畔心靈港灣</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>推薦書籍</h1>
+    <nav>
+      <a href="https://relieveyou-43736.web.app">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="story.html">個案/文章分享</a>
+      <a href="resource.html">相關資源</a>
+      <a href="therapist.html">合作心理師</a>
+      <a href="books.html">推薦書籍</a>
+    </nav>
+  </header>
+
+  <main class="book-recommendation">
+    <div class="book-grid">
+      
+      <div class="book-card">
+        <img src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/021/40/E050214068.jpg&v=6621d11ck&w=348&h=348" alt="走出慾望矽谷 書封">
+        <div class="book-content">
+          <h3>《走出慾望矽谷》</h3>
+          <p><strong>作者：</strong>Jason Portnoy</p>
+          <p>走出色情與性的黑暗世界，通向成功與自我實現的道路。</p>
+          <a href="https://www.books.com.tw/products/E050214068?srsltid=AfmBOoqdQd3b-3HksODZp6mf69uwJHRLUF3vaSOTlMDWhYgJoonEGLzM" target="_blank">前往博客來</a>
+        </div>
+      </div>
+  
+      <div class="book-card">
+        <img src="https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/024/53/E050245394.jpg&v=676bb94bk&w=348&h=348" alt="脆弱的力量 書封">
+        <div class="book-content">
+          <h3>《脆弱的力量》</h3>
+          <p><strong>作者：</strong>Brené Brown</p>
+          <p>教我們正視脆弱，轉化成與人連結的勇氣與力量。         </p>
+          <a href="https://www.books.com.tw/products/E050245394?sloc=main" target="_blank">前往博客來</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/088/35/0010883593.jpg&v=6020bb79k&w=348&h=348" alt="痴漢心理學 書封">
+        <div class="book-content">
+          <h3>《痴漢心理學》</h3>
+          <p><strong>作者：</strong>齊藤章佳</p>
+          <p>帶我們了解「痴漢」：最接近我們日常生活的性犯罪者，其成因以及解決之道。</p>
+          <a href="https://www.books.com.tw/products/0010883593?srsltid=AfmBOor36cqkI0PEq6SYMNSpuxuek1thWaALcqDGzEhn4iFyH9z4bR-C" target="_blank">前往博客來</a>
+        </div>
+      </div>
+  
+    </div>
+
+    <style>
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 桌機固定三欄 */
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+      
+        .book-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+            max-width: 100%;
+        }
+      
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+      
+        .book-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+      
+        .book-content {
+            padding: 1rem;
+        }
+      
+        .book-content h3 {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+      
+        .book-content p {
+            font-size: 0.9rem;
+            color: #444;
+            margin: 0.3rem 0;
+        }
+      
+        .book-content a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #2c7a7b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+      
+        .book-content a:hover {
+            text-decoration: underline;
+        }
+      
+        /* 平板裝置：兩欄 */
+        @media screen and (max-width: 1024px) {
+          .book-grid {
+              grid-template-columns: repeat(2, 1fr);
+          }
+        }
+      
+        /* 手機裝置：一欄 */
+        @media screen and (max-width: 600px) {
+          .book-grid {
+              grid-template-columns: 1fr;
+          }
+        }
+      </style>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>聯絡信箱：<a href="mailto:relieveyou0417@gmail.com">relieveyou0417@gmail.com</a></p>
+      </div>
+  
+      <div class="footer-right">
+        <p> 我們有line的匿名支持社群，需要幫助者請透過信箱聯絡!
+        </p>
+      </div>
+    </div>
+  
+    <p class="footer-note">
+      本平台無任何商業用途，僅提供支持性資源與匿名分享。<br>
+      © 2025 湖畔心靈港灣｜我們相信溫柔的力量，也希望你尊重這份用心。如需引用或分享，請來信聯繫。
+    </p>
+
+    <!-- 浮動 Facebook 圖示 -->
+    <a href="https://www.facebook.com/profile.php?id=61575463082263" 
+       target="_blank" 
+       class="floating-fb-icon" 
+       aria-label="Facebook 粉專">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+           alt="Facebook" />
+    </a>
+
+    <style>
+    footer {
+      position: relative; /* 為 footer 設定相對定位 */
+    }
+
+    /* 浮動 Facebook 圖示 */
+    .floating-fb-icon img {
+      position: absolute; /* 設定絕對定位，使圖示相對於 footer 定位 */
+      bottom: 20px; /* 讓它距離 footer 底部 20px */
+      left: 20px; /* 讓它距離左邊 20px */
+      z-index: 1000;
+      background-color: white;
+      border-radius: 50%;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .floating-fb-icon img {
+      width: 32px;
+      height: 32px;
+    }
+    
+    .floating-fb-icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    </style>
+</footer>
+
+ 
+</body>
+</html>
