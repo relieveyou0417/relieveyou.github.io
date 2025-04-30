@@ -4,53 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>個案/文章分享｜湖畔心靈港灣</title>
-  <link rel="stylesheet" href="styles.css"> <!-- 載入樣式檔 -->
+  <link rel="stylesheet" href="styles.css">
 
   <style>
     main {
-      max-width: 1000px;
+      max-width: 700px;
       margin: 0 auto;
       padding: 20px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .blog-section {
-      width: 48%;
-    }
-
-    .case-sharing-section {
-      width: 48%;
-    }
-
-    .case-item {
-      background-color: white;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .case-item h2 {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
-    }
-
-    .case-item p {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    .case-item a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #2c7a7b;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .case-item a:hover {
-      text-decoration: underline;
     }
   </style>
 
@@ -70,24 +30,8 @@
   </header>
 
   <main>
-    <!-- 部落格區塊 -->
-    <section class="blog-section">
-      <h2>部落格文章</h2>
-      <p>這裡會分享我個人的文章，探討各種關於心靈成長的主題，包括性成癮、情感療癒等。歡迎閱讀和分享你的看法！</p>
-      <a href="https://relieveyou0417.blogspot.com" target="_blank">前往部落格閱讀更多文章</a>
-    </section>
-
-    <!-- 個案分享區塊 -->
-    <section class="case-sharing-section">
-      <h2>個案分享</h2>
-      <div class="case-item">
-        <h3>我的故事</h3>
-        <p>這是我對抗性成癮的故事，目前我還在寫，可能會隨時更新。</p>
-        <a href="story1.html" target="_blank">閱讀更多</a>
-      </div>
-
-      <!-- 可以再加入更多的分享 -->
-    </section>
+    <h2>我的故事</h2>
+    <p>撰寫中...</p>
   </main>
 
   <footer>
@@ -115,7 +59,38 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
            alt="Facebook" />
     </a>
-  </footer>
+
+    <style>
+    footer {
+      position: relative; /* 為 footer 設定相對定位 */
+    }
+
+    /* 浮動 Facebook 圖示 */
+    .floating-fb-icon img {
+      position: absolute; /* 設定絕對定位，使圖示相對於 footer 定位 */
+      bottom: 20px; /* 讓它距離 footer 底部 20px */
+      left: 20px; /* 讓它距離左邊 20px */
+      z-index: 1000;
+      background-color: white;
+      border-radius: 50%;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .floating-fb-icon img {
+      width: 32px;
+      height: 32px;
+    }
+    
+    .floating-fb-icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    </style>
+</footer>
+
+
 
 </body>
 </html>
